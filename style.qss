@@ -1,0 +1,145 @@
+/* Main window background */
+QMainWindow {
+    background-color: #0D1B2A; /* Dark navy blue */
+    color: #FFD60A; /* Bright yellow text */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+/* QLabel styling */
+QLabel {
+    color: #FFE066; /* Soft yellow */
+    font-weight: bold;
+}
+
+/* Radio button styling */
+QRadioButton {
+    color: #FFE066; /* Soft yellow text for radio buttons */
+}
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #1B263B; /* Dark background for the indicator */
+    border: 2px solid #FCA311; /* Yellow-orange border */
+}
+
+QRadioButton::indicator:checked {
+    background-color: #FFD60A; /* Bright yellow when checked */
+    border: 2px solid #00B4D8;
+}
+
+/* Logo label */
+QLabel#logo_label {
+    border: 2px solid #FFD60A;
+    border-radius: 10px;
+    background-color: #14213D;
+}
+
+/* Input and output video display labels */
+QLabel#input_label, QLabel#output_label {
+    background-color: #1B263B;
+    border: 2px solid #FCA311; /* Yellow-orange */
+    border-radius: 8px;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #0077B6; /* Blue */
+    color: #FFE066; /* Yellow */
+    border: 2px solid #FFD60A;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #00B4D8; /* Lighter blue */
+    border-color: #FFB703;
+    color: #FFF8DC;
+}
+
+QPushButton:pressed {
+    background-color: #023E8A; /* Darker blue */
+    border-color: #FFB703;
+}
+
+/* Toggle buttons (like fog removal) when checked */
+QPushButton:checked {
+    background-color: #FFB703; /* Bright yellow */
+    color: #0D1B2A; /* Dark text */
+    border-color: #FFD60A;
+}
+
+/* Sliders */
+QSlider::groove:horizontal {
+    border: 1px solid #444444;
+    height: 10px;
+    background: #14213D;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal {
+    background: #FFD60A;
+    border: 2px solid #FCA311;
+    width: 20px;
+    height: 20px;
+    margin: -6px 0;
+    border-radius: 10px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #FFB703;
+    border-color: #FFD60A;
+}
+
+/* Scrollbars (if needed) */
+QScrollBar:horizontal {
+    background: #0D1B2A;
+    height: 12px;
+    margin: 0px 20px 0 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #FFD60A;
+    min-width: 20px;
+    border-radius: 5px;
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: #FFB703;
+    color: #0D1B2A;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Message Boxes */
+QMessageBox {
+    background-color: #14213D;
+    color: #FFE066;
+    font-size: 14px;
+}
+
+/* Scroll area */
+QScrollArea {
+    border: none;
+    background-color: #0D1B2A;
+}
+
+/* Highlight selection color */
+QWidget:selected {
+    background-color: #FFB703;
+    color: #0D1B2A;
+}
+
+/* Status bar (if added later) */
+QStatusBar {
+    background-color: #14213D;
+    color: #FFD60A;
+    border-top: 1px solid #FFD60A;
+}
